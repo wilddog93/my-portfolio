@@ -1,4 +1,21 @@
-export const lightTheme = {
+export type ThemeProps = {
+  name: string;
+  body: string;
+  text: string;
+  dark: string;
+  secondaryText: string;
+  accentColor: string;
+  accentBright: string;
+  projectCard: string;
+  skinColor: string;
+  skinColor2: string;
+  imageDark: string;
+  imageClothes: string;
+  avatarMisc: string;
+  avatarShoes: string;
+}
+
+export const lightTheme: ThemeProps = {
   name: "light",
   body: "#FFFFFF",
   text: "#343434",
@@ -15,7 +32,7 @@ export const lightTheme = {
   avatarShoes: "#ccd2e3",
 };
 
-export const darkTheme = {
+export const darkTheme: ThemeProps = {
   name: "dark",
   body: "#1D1D1D",
   text: "#FFFFFF",

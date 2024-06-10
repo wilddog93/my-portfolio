@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
+  name: "Jumakri Ridho Fauzi",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
@@ -9,61 +9,25 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Education & Cerifications",
+      href: "/education-certifications",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    },
-  ],
-  navMenuItems: [
-    {
-      label: "Profile",
-      href: "/profile",
-    },
-    {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Experiences",
+      href: "/experiences",
     },
     {
       label: "Projects",
       href: "/projects",
     },
     {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Contact & Resume",
+      href: "/contact-resume",
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/wilddog93",
+    linkedIn: "https://www.linkedin.com/in/jumakri-ridho-fauzi/",
+    discord: "https://discord.gg/492953102652145665",
   },
 };

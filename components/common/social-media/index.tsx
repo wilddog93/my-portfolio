@@ -8,6 +8,7 @@ import { Icon } from "../icons";
 type SocialMedia = {
   link: string;
   icon: IconType;
+  style?: any;
 };
 
 type Props = {
@@ -27,14 +28,14 @@ export const SocialMedia: FC<Props> = ({ items, className }) => {
             href={social.link}
             isExternal
             className={buttonTheme({
-              variant: "flat",
+              variant: "light",
               color: "primary",
               isIconOnly: true,
               radius: "full",
               size: "md"
             })}
           >
-            <Icon icon={social.icon} />
+            <Icon className="text-inherit size-8" icon={social.icon} style={social.style} />
           </Link>
         )
       })}

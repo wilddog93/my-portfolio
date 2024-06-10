@@ -1,5 +1,6 @@
 /* Change this file to get your personal Porfolio */
-import { FaFacebook, FaGithub, FaGitlab, FaGoogle, FaLinkedin } from "react-icons/fa"
+import { FaCss3, FaFacebook, FaGithub, FaGitlab, FaGoogle, FaHtml5, FaLinkedin } from "react-icons/fa"
+import { SiGit, SiJavascript, SiNextdotjs, SiNodedotjs, SiNpm, SiPostman, SiReact, SiRedux, SiTypescript, SiVuedotjs, SiYarn } from "react-icons/si"
 
 // Website related settings
 const settings = {
@@ -25,19 +26,28 @@ const greeting = {
 const socialMediaLinks = [
   {
     link: "https://github.com/wilddog93",
-    icon: FaGithub
+    icon: FaGithub,
+    style: {
+      color: "#000000"
+    }
   },
   {
     link: "https://www.linkedin.com/in/jumakri-ridho-fauzi/",
     icon: FaLinkedin
   },
   {
-    link: "ridhoajibx@gmail.com",
-    icon: FaGoogle
+    link: "mailto:ridhoajibx@gmail.com",
+    icon: FaGoogle,
+    style: {
+      color: "#FF0000"
+    }
   },
   {
     link: "https://gitlab.com/ridhoajibx",
-    icon: FaGitlab
+    icon: FaGitlab,
+    style: {
+      color: "#FFA62F"
+    }
   },
   {
     link: "https://www.facebook.com/ridhoajibx/",
@@ -49,31 +59,30 @@ const skills = {
   data: [
     {
       title: "Tech Stack Development",
-      fileName: "FullStackImg",
+      fileName: "tech-stack",
       skills: [
-        "🚀 Develop highly interactive Front end and User Interfaces for your website and applications",
-        "🚀 Building responsive website front end using ReactJS",
-        "🚀 Creating application backend in Node, Express & Laravel",
-        "🚀 Integration of third party services such as Firebase & Redux",
+        "Develop highly interactive Front end and User Interfaces for your website and applications",
+        "Building responsive website front end using ReactJS & VueJS",
+        "Integration of third party services such as Firebase, Redux & Zustand",
       ],
       softwareSkills: [
         {
           skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
+          icon: FaHtml5,
           style: {
             color: "#E34F26",
           },
         },
         {
           skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
+          icon: FaCss3,
           style: {
             color: "#1572B6",
           },
         },
         {
           skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
+          icon: SiJavascript,
           style: {
             backgroundColor: "#FFFFFF",
             color: "#F7DF1E",
@@ -81,137 +90,79 @@ const skills = {
         },
         {
           skillName: "TypeScript",
-          fontAwesomeClassname: "simple-icons:typescript",
+          icon: SiTypescript,
           style: {
             backgroundColor: "#FFFFFF",
-            color: "#F7DF1E",
+            color: "#3178C6",
           },
         },
         {
           skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
+          icon: SiReact,
           style: {
             color: "#61DAFB",
           },
         },
         {
           skillName: "NextJS",
-          fontAwesomeClassname: "simple-icons:nextjs",
+          icon: SiNextdotjs,
           style: {
-            color: "#61DAFB",
+            backgroundColor: "#FFFFFF",
+            color: "#000000",
           },
         },
         {
           skillName: "VueJS",
-          fontAwesomeClassname: "simple-icons:vue",
+          icon: SiVuedotjs,
           style: {
-            color: "#61DAFB",
+            color: "#213547",
+            backgroundColor: "#42B883",
           },
         },
         {
           skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
+          icon: SiNodedotjs,
           style: {
             color: "#339933",
           },
         },
         {
+          skillName: "Redux",
+          icon: SiRedux,
+          style: {
+            color: "#61DAFB",
+          },
+        },
+        {
           skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
+          icon: SiNpm,
           style: {
             color: "#CB3837",
           },
         },
         {
           skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
+          icon: SiYarn,
           style: {
             color: "#2B89B4",
           },
         },
         {
-          skillName: "MySQL",
-          fontAwesomeClassname: "simple-icons:mysql",
+          skillName: "Postman",
+          icon: SiPostman,
           style: {
-            color: "#4479A1",
+            color: "#FF5F00",
           },
         },
         {
           skillName: "Git",
-          fontAwesomeClassname: "simple-icons:git",
+          icon: SiGit,
           style: {
             color: "#E94E32",
           },
         },
       ],
-    },
-    // {
-    //   title: "Cloud Infra-Architecture",
-    //   fileName: "CloudInfraImg",
-    //   skills: [
-    //     "🚀 Experience working on multiple cloud platforms",
-    //     "🚀 Experience hosting and managing websites",
-    //     "🚀 Experience with Continuous Integration",
-    //   ],
-    //   softwareSkills: [
-    //     {
-    //       skillName: "AWS",
-    //       fontAwesomeClassname: "simple-icons:amazonaws",
-    //       style: {
-    //         color: "#FF9900",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Netlify",
-    //       fontAwesomeClassname: "simple-icons:netlify",
-    //       style: {
-    //         color: "#38AFBB",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Heroku",
-    //       fontAwesomeClassname: "simple-icons:heroku",
-    //       style: {
-    //         color: "#6863A6",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Firebase",
-    //       fontAwesomeClassname: "simple-icons:firebase",
-    //       style: {
-    //         color: "#FFCA28",
-    //       },
-    //     },
-    //     {
-    //       skillName: "PostgreSQL",
-    //       fontAwesomeClassname: "simple-icons:postgresql",
-    //       style: {
-    //         color: "#336791",
-    //       },
-    //     },
-    //     {
-    //       skillName: "MongoDB",
-    //       fontAwesomeClassname: "simple-icons:mongodb",
-    //       style: {
-    //         color: "#47A248",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Docker",
-    //       fontAwesomeClassname: "simple-icons:docker",
-    //       style: {
-    //         color: "#1488C6",
-    //       },
-    //     },
-    //     {
-    //       skillName: "GitHub Actions",
-    //       fontAwesomeClassname: "simple-icons:githubactions",
-    //       style: {
-    //         color: "#5b77ef",
-    //       },
-    //     },
-    //   ],
-    // },
+    }
   ],
 };
 

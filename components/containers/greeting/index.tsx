@@ -22,7 +22,7 @@ export const Greeting = () => {
   }, [resolvedTheme]);
 
   return (
-    <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-10 items-center tracking-wider px-10">
+    <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-10 items-center tracking-wider">
       <div className='w-full flex flex-col gap-6 text-center sm:text-left'>
         <h1 className="text-6xl font-semibold">{greeting.title}</h1>
         <p
