@@ -13,7 +13,7 @@ const settings = {
 const greeting = {
   title: "Hello.",
   title2: "ridho",
-  logo_name: "ridho",
+  logo_name: "Jumakri Ridho Fauzi",
   nickname: "ridho / wilddog93",
   full_name: "Jumakri Ridho Fauzi",
   subTitle:

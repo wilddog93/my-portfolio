@@ -24,9 +24,9 @@ export const Greeting = () => {
   return (
     <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-10 items-center tracking-wider">
       <div className='w-full flex flex-col gap-6 text-center sm:text-left'>
-        <h1 className="text-6xl font-semibold">{greeting.title}</h1>
+        <h1 className="text-4xl sm:text-6xl font-semibold">{greeting.title}</h1>
         <p
-          className="text-lg font-medium"
+          className="text-lg sm:text-xl font-medium"
           style={{ color: colors.secondaryText }}
         >
           <span>I'm </span>
@@ -41,11 +41,11 @@ export const Greeting = () => {
         <div className="portfolio-repo-btn-div">
           <Link
             className={buttonTheme({
-              variant: "flat",
+              variant: "solid",
               color: "primary",
-              radius: "md"
+              radius: "lg"
             })}
-            href='/contact'
+            href='/contact-resume'
           >
             Contact Me
           </Link>
