@@ -22,7 +22,7 @@ export const SkillSection: FC<Props> = ({ theme }) => {
               {skill.title}
             </h1>
             <div className='w-full sm:w-2/3 flex mx-auto'>
-              <SoftwareSkill logos={skill.softwareSkills} />
+              <SoftwareSkill logos={skill.softwareSkills} className='flex-wrap items-center justify-center gap-4' />
             </div>
             <div className='w-full flex flex-col gap-4 tracking-wider'>
               {skill.skills.map((text, index) => (

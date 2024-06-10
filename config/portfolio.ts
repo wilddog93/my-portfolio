@@ -1,6 +1,6 @@
 /* Change this file to get your personal Porfolio */
-import { FaCss3, FaFacebook, FaGithub, FaGitlab, FaGoogle, FaHtml5, FaLinkedin } from "react-icons/fa"
-import { SiGit, SiJavascript, SiNextdotjs, SiNodedotjs, SiNpm, SiPostman, SiReact, SiRedux, SiTypescript, SiVuedotjs, SiYarn } from "react-icons/si"
+import { FaBootstrap, FaCss3, FaFacebook, FaGithub, FaGitlab, FaGoogle, FaHtml5, FaLaravel, FaLinkedin, FaNodeJs, FaPhp, FaReact } from "react-icons/fa"
+import { SiFirebase, SiGit, SiJavascript, SiJquery, SiLeaflet, SiNextdotjs, SiNodedotjs, SiNpm, SiPostman, SiReact, SiRedux, SiSocketdotio, SiTailwindcss, SiTypescript, SiVuedotjs, SiYarn } from "react-icons/si"
 
 // Website related settings
 const settings = {
@@ -289,7 +289,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects make use of a vast variety of latest technology tools. My best experience is to create Laravel Back-end projects,and React Project. Below are some of my projects. Note that not all of the mentioned projects are on GitHub yet.",
+    "My projects make use of a vast variety of latest technology tools. My best experience is to create some project using NextJS and NextUI based to TailwindCSS. Below are some of my projects. Note that not all of the mentioned projects are on GitHub yet.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -314,107 +314,258 @@ const projects = {
   data: [
     {
       id: "0",
-      name: "Fund",
-      url: "https://github.com/ridhoajibx/fund",
+      name: "Royale Springhill",
+      url: "https://github.com/wilddog93/royale-springhill",
+      website: "https://royale-springhill.vercel.app/",
       description:
-        "This is Crow-Funding web and application. That to tracking all expense users",
+        "This is Building Management Dashboard Website and application",
       languages: [
         {
-          name: "Node Js",
-          iconifyClass: "logos-nodejs",
+          skillName: "Javascript",
+          icon: SiJavascript,
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#F7DF1E",
+          },
+          className: "text-yellow-500"
         },
         {
-          name: "React Js",
-          iconifyClass: "logos-react",
+          skillName: "ReactJS",
+          icon: FaReact,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
+        },
+        {
+          skillName: "NextJS",
+          icon: SiNextdotjs,
+          className: "bg-background"
+        },
+        {
+          skillName: "TailwidCSS",
+          icon: SiTailwindcss,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
+        },
+        {
+          skillName: "Firebase",
+          icon: SiFirebase,
+          style: {
+            color: "#F7DF1E",
+          },
+          className: "text-yellow-600"
         },
       ],
     },
     {
       id: "1",
-      name: "Company Profile website",
-      url: "https://github.com/ridhoajibx/transea-dev",
+      name: "MRCOOL E-Commerce",
+      url: "https://github.com/wilddog93/mrcool-dev",
+      website: "https://dev.mrcool.work/",
       description:
-        "PT Transea Global Indonesia is a shipping company in Batam Port of Indonesia, excellent in ship agency, chartering and brokering, projects logistics.",
+        "This is E-Commerce Website based on US and Canada",
       languages: [
         {
-          name: "HTML5",
-          iconifyClass: "vscode-icons:file-type-html",
+          skillName: "Typescript",
+          icon: SiTypescript,
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#3178C6",
+          },
+          className: "text-yellow-500"
         },
         {
-          name: "CSS3",
-          iconifyClass: "vscode-icons:file-type-css",
+          skillName: "ReactJS",
+          icon: FaReact,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
         },
         {
-          name: "Jquery",
-          iconifyClass: "logos-jquery",
+          skillName: "NextJS",
+          icon: SiNextdotjs,
+          className: "bg-background"
         },
         {
-          name: "Bootstrap Css",
-          iconifyClass: "logos-bootstrap",
+          skillName: "TailwidCSS",
+          icon: SiTailwindcss,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
         },
       ],
     },
     {
       id: "2",
-      name: "All Star movies",
-      url: "https://github.com/ridhoajibx/movie",
-      description: "A simple movie rating and review website.",
+      name: "Internal Geospatial Dashboard",
+      url: "https://github.com/wilddog93/YKAN-geospatial",
+      website: "https://geomap-dev.vercel.app/",
+      description:
+        "Internal Geospatioal Dashboard is website dashboard are monitoring, adaptation and mitigation of climate change and preventing loss of biodiversity in Indonesia. YKAN - Yayasan Konservasi Alam Nusantara.",
       languages: [
         {
-          name: "NodeJS",
-          iconifyClass: "logos-nodejs",
+          skillName: "Typescript",
+          icon: SiTypescript,
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#3178C6",
+          },
+          className: "text-yellow-500"
         },
         {
-          name: "React Js",
-          iconifyClass: "logos-react",
+          skillName: "ReactJS",
+          icon: FaReact,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
+        },
+        {
+          skillName: "Geolocation Map - Leaflet",
+          icon: SiLeaflet,
+          style: {
+            color: "#42B883",
+          },
+          className: "text-green-600"
+        },
+        {
+          skillName: "TailwidCSS",
+          icon: SiTailwindcss,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
         },
       ],
     },
     {
       id: "3",
-      name: "Screencast REST API",
-      url: "https://github.com/ridhoajibx/screencastAPILaravel",
+      name: "Barrie Gate Dashboard",
+      url: "https://github.com/wilddog93/barrier-client",
+      website: "https://barrier-dashboard.vercel.app/",
       description:
-        "Screencast is an onine course website build using Laravel Framework as REST API and admin panel and React JS as a client interface.",
+        "This is Barrie gate controller website dashboard based on Indonesia. PT Triputra Argo Persada",
       languages: [
         {
-          name: "Laravel",
-          iconifyClass: "logos-laravel",
+          skillName: "Typescript",
+          icon: SiTypescript,
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#3178C6",
+          },
+          className: "text-yellow-500"
+        },
+        {
+          skillName: "ReactJS",
+          icon: FaReact,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
+        },
+        {
+          skillName: "NextJS",
+          icon: SiNextdotjs,
+          className: "bg-background"
+        },
+        {
+          skillName: "TailwidCSS",
+          icon: SiTailwindcss,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
         },
       ],
     },
     {
       id: "4",
-      name: "Screencast",
-      url: "https://github.com/ridhoajibx/screencast",
+      name: "Auto Despatch Dashboard",
+      url: "https://github.com/wilddog93/barrier-client",
+      website: "https://auto-despatch.vercel.app/",
       description:
-        "Screencast is an onine course website build using Laravel Framework as REST API and admin panel and React JS as a client interface.",
+        "Auto Despatch Dashboard is Automatically identify, plan, and manage optimal routes for on-demand orders. Tap into increased fleet efficiency, minimized manual efforts based on Indonesia. PT Triputra Argo Persada",
       languages: [
         {
-          name: "React Js",
-          iconifyClass: "logos-react",
+          skillName: "Typescript",
+          icon: SiTypescript,
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#3178C6",
+          },
+          className: "text-yellow-500"
+        },
+        {
+          skillName: "ReactJs",
+          icon: FaReact,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
+        },
+        {
+          skillName: "NextJS",
+          icon: SiNextdotjs,
+          className: "bg-background"
+        },
+        {
+          skillName: "TailwidCSS",
+          icon: SiTailwindcss,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
+        },
+        {
+          skillName: "Socket.io",
+          icon: SiSocketdotio,
+          className: "text-foreground"
         },
       ],
     },
     {
       id: "5",
-      name: "Cuti Online",
-      url: "https://github.com/ridhoajibx/cuti-online-php-native",
+      name: "Pokemon API Website",
+      url: "https://github.com/wilddog93/barrier-client",
+      website: "https://auto-despatch.vercel.app/",
       description:
-        "PT Angkasa Engineer Indonesia is Structural and Machanical Engineering services to mainly Oil & Gas clients, andas such economy of design is at the forefront of our work ethic.",
+        "This is a pokemon website",
       languages: [
         {
-          name: "HTML5",
-          iconifyClass: "vscode-icons:file-type-html",
+          skillName: "Typescript",
+          icon: SiTypescript,
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#3178C6",
+          },
+          className: "text-yellow-500"
         },
         {
-          name: "CSS3",
-          iconifyClass: "vscode-icons:file-type-css",
+          skillName: "ReactJS",
+          icon: FaReact,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
         },
         {
-          name: "PHP",
-          iconifyClass: "vscode-icons:file-type-php",
+          skillName: "NextJS",
+          icon: SiNextdotjs,
+          className: "bg-background"
         },
+        {
+          skillName: "TailwidCSS",
+          icon: SiTailwindcss,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
+        }
       ],
     },
   ],

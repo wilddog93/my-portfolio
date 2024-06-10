@@ -14,7 +14,7 @@ type Props = {
 export const Certifications: FC<Props> = ({ theme, ...props }) => {
   return (
     <div {...props} className="w-full flex flex-col gap-10" id="educations">
-      <h1 className="text-4xl sm:text-6xl font-semibold text-center" style={{ color: theme.text }}>
+      <h1 className="text-2xl sm:text-4xl font-semibold text-center" style={{ color: theme.text }}>
         Certifications
       </h1>
       <div className="flex flex-wrap items-center justify-center gap-10">
