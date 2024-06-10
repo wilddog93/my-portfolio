@@ -166,21 +166,21 @@ const degrees = {
     {
       title: "Binar X Glints Academy Bootcamp Batch #7",
       subtitle: "Front End Engineer",
-      logo_path: "glints.png",
-      alt_name: "SETI",
+      logo_path: "/image/logo/binar.svg",
+      alt_name: "binar-academy",
       duration: "2020",
       descriptions: [
         "🚀 I have studied core subjects like React JS in Front End Class.",
         // "🚀 I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
         "🚀 I have implemented several projects based on what I've leart under my Bootcamp Batch #7. ",
       ],
-      website_link: "https://academy.glints.com/",
+      website_link: "https://www.binaracademy.com/",
     },
     {
       title: "University of Ibnu Sina",
       subtitle: "Diploma in Information Technology",
-      logo_path: "logo-ibsi.png",
-      alt_name: "SETI",
+      logo_path: "/image/logo/ibsi.png",
+      alt_name: "ibsi",
       duration: "2016 - 2020 (Postpone)",
       descriptions: [
         "🚀 I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
@@ -196,33 +196,22 @@ const certifications = {
   certifications: [
     {
       title: "Binar X Glints Academy",
-      subtitle: "Glints",
-      logo_path: "glints-academy.jpeg",
+      subtitle: "Binar",
+      logo_path: "/image/binar-academy.png",
       certificate_link:
         "https://drive.google.com/file/d/1gVdqIz1QPx2ZLc1HUB-_lFW8VbhKCiHG/view?usp=sharing",
-      alt_name: "glints",
-      // color_code: "#f36c3d",
+      alt_name: "binar",
       color_code: "#ce1212",
     },
     {
       title: "Udemy Online Course",
       subtitle: "udemy",
-      logo_path: "Udemy.jpg",
+      logo_path: "/image/Udemy.jpg",
       certificate_link:
         "https://drive.google.com/file/d/1Rd2DFOUllL6Smb8agTlh9Yr3g-yk_Fl_/view?usp=sharing",
       alt_name: "udemy",
-      // color_code: "#f36c3d",
       color_code: "#fffbf3",
-    },
-    // color_code: "#8C151599",
-    // color_code: "#7A7A7A",
-    // color_code: "#0C9D5899",
-    // color_code: "#C5E2EE",
-    // color_code: "#ffc475",
-    // color_code: "#g",
-    // color_code: "#ffbfae",
-    // color_code: "#fffbf3",
-    // color_code: "#b190b0",
+    }
   ],
 };
 

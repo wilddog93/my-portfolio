@@ -38,18 +38,17 @@ export const Greeting = () => {
 
         <SocialMedia items={socialMediaLinks} className='sm:justify-start' />
 
-        <div className="portfolio-repo-btn-div">
-          <Link
-            className={buttonTheme({
-              variant: "solid",
-              color: "primary",
-              radius: "lg"
-            })}
-            href='/contact-resume'
-          >
-            Contact Me
-          </Link>
-        </div>
+        <Link
+          className={buttonTheme({
+            variant: "solid",
+            color: "primary",
+            radius: "lg",
+            className: "w-full max-w-fit"
+          })}
+          href='/contacts'
+        >
+          Contact Me
+        </Link>
       </div>
 
       <div className="w-full max-w-full h-auto">

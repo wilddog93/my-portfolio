@@ -10,7 +10,7 @@ export const siteConfig = {
     },
     {
       label: "Education & Cerifications",
-      href: "/education-certifications",
+      href: "/educations",
     },
     {
       label: "Experiences",
@@ -22,7 +22,7 @@ export const siteConfig = {
     },
     {
       label: "Contact & Resume",
-      href: "/contact-resume",
+      href: "/contacts",
     },
   ],
   links: {
