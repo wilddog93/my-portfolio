@@ -1,3 +1,5 @@
+"use client"
+
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -26,8 +28,12 @@ import {
   Logo,
 } from "@/components/icons";
 import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
+
+  const pathname = usePathname()
+
   const searchInput = (
     <Input
       aria-label="Search"
@@ -50,29 +56,54 @@ export const Navbar = () => {
   );
 
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
+    <NextUINavbar
+      maxWidth="xl"
+      position="sticky"
+      classNames={{
+        item: [
+          "flex",
+          "relative",
+          "h-full",
+          "items-center",
+          "transition-all duration-300 ease-in-out",
+          "data-[active=true]:after:content-['']",
+          "data-[active=true]:after:absolute",
+          "data-[active=true]:after:bottom-8",
+          "lg:data-[active=true]:after:-bottom-1",
+          "data-[active=true]:after:left-0",
+          "lg:data-[active=true]:after:left-0",
+          "data-[active=true]:after:right-0",
+          "lg:data-[active=true]:after:right-0",
+          "data-[active=true]:after:h-[4px]",
+          "data-[active=true]:after:rounded-[2px]",
+          "data-[active=true]:after:bg-[#126e82]",
+        ],
+      }}
+    >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             {/* <Logo /> */}
-            <p className="font-bold text-inherit">{siteConfig.name}</p>
+            <p className="font-bold text-[#126e82]">{siteConfig.name}</p>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
-              <NextLink
-                className={clsx(
-                  linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
-                )}
-                color="foreground"
-                href={item.href}
-              >
-                {item.label}
-              </NextLink>
-            </NavbarItem>
-          ))}
+          {siteConfig.navItems.map((item) => {
+            let active = pathname == item.href || pathname.includes(item.label)
+            return (
+              <NavbarItem isActive={active} key={item.href}>
+                <NextLink
+                  className={clsx(
+                    linkStyles({ color: "foreground" }),
+                    active ? "text-[#126e82] font-medium" : "",
+                  )}
+                  href={item.href}
+                >
+                  {item.label}
+                </NextLink>
+              </NavbarItem>
+            )
+          })}
         </ul>
       </NavbarContent>
 
@@ -104,17 +135,23 @@ export const Navbar = () => {
 
       <NavbarMenu>
         <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color="foreground"
-                href={item.href}
-                size="lg"
-              >
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
-          ))}
+          {siteConfig.navItems.map((item, index) => {
+            let active = pathname == item.href || pathname.includes(item.label)
+            return (
+              <NavbarMenuItem isActive={active} key={`${item}-${index}`}>
+                <Link
+                  className={clsx(
+                    linkStyles({ color: "foreground" }),
+                    active ? "text-[#126e82] font-medium" : "",
+                  )}
+                  href={item.href}
+                  size="lg"
+                >
+                  {item.label}
+                </Link>
+              </NavbarMenuItem>
+            )
+          })}
         </div>
       </NavbarMenu>
     </NextUINavbar>
