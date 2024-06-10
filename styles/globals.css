@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import "./scroll-bar.css";
+@import "./feeling-proud.css";
