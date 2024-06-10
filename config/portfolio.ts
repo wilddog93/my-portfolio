@@ -27,9 +27,7 @@ const socialMediaLinks = [
   {
     link: "https://github.com/wilddog93",
     icon: FaGithub,
-    style: {
-      color: "#000000"
-    }
+    className: "text-foreground"
   },
   {
     link: "https://www.linkedin.com/in/jumakri-ridho-fauzi/",

@@ -9,6 +9,7 @@ type SocialMedia = {
   link: string;
   icon: IconType;
   style?: any;
+  className?: string | undefined;
 };
 
 type Props = {
@@ -35,7 +36,10 @@ export const SocialMedia: FC<Props> = ({ items, className }) => {
               size: "md"
             })}
           >
-            <Icon className="text-inherit size-8" icon={social.icon} style={social.style} />
+            <Icon className={clsx(
+              "size-8",
+              social.className
+            )} icon={social.icon} style={social.style} />
           </Link>
         )
       })}
