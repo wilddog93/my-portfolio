@@ -531,8 +531,8 @@ const projects = {
     {
       id: "5",
       name: "Pokemon API Website",
-      url: "https://github.com/wilddog93/barrier-client",
-      website: "https://auto-despatch.vercel.app/",
+      url: "https://github.com/wilddog93/pokemon-app-techassesment",
+      website: "https://pokemon-app-techassesment.vercel.app/",
       description:
         "This is a pokemon website",
       languages: [
