@@ -104,10 +104,7 @@ const skills = {
         {
           skillName: "NextJS",
           icon: SiNextdotjs,
-          style: {
-            backgroundColor: "#FFFFFF",
-            color: "#000000",
-          },
+          className: "text-foreground",
         },
         {
           skillName: "VueJS",
