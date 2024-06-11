@@ -20,7 +20,7 @@ type Props = {
 export const SocialMedia: FC<Props> = ({ items, className }) => {
   return (
     <div className={clsx(
-      "w-full max-w-xs flex items-center justify-center gap-2",
+      "w-full flex items-center justify-center gap-2",
       className
     )}>
       {items.map((social, index) => {

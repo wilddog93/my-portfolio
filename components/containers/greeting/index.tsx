@@ -43,7 +43,7 @@ export const Greeting = () => {
             variant: "solid",
             color: "primary",
             radius: "lg",
-            className: "w-full max-w-fit"
+            className: "w-full max-w-fit mx-auto sm:mx-0"
           })}
           href='/contacts'
         >

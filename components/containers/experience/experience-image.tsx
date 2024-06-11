@@ -14,8 +14,8 @@ export const ExperienceImage: FC<Props> = ({ theme, ...props }) => {
       id="bf56719a-dd30-4b09-833f-7c41eeee086b"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width="1094"
-      height="760"
+      width="795.39431"
+      height="574.03802"
       viewBox="0 0 1094 760"
     >
       <title></title>
