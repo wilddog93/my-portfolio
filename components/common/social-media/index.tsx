@@ -26,6 +26,7 @@ export const SocialMedia: FC<Props> = ({ items, className }) => {
       {items.map((social, index) => {
         return (
           <Link
+            key={index}
             href={social.link}
             isExternal
             className={buttonTheme({

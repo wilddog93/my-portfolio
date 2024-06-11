@@ -243,10 +243,10 @@ export const ExperienceImage: FC<Props> = ({ theme, ...props }) => {
         fill={theme.accentColor}
         opacity="0.1"
       />
-      <polygon
+      {/* <polygon
         points="240 321 194 603 402 581 393 557 500 230.5 570.5 268.5 320.5 240 321"
         fill="#292929"
-      />
+      /> */}
       <polygon points="186 1 466 0 547 613 266 651 186 1" fill="#292929" />
       <polygon
         points="216.5 24.5 442.5 24.5 521.5 594.5 288.5 626.5 216.5 24.5"

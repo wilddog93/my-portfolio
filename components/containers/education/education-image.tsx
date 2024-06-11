@@ -7,10 +7,11 @@ type Props = {
   className?: string | undefined;
 }
 
-export const EducationImage:FC<Props> = ({ theme, ...props }) => {
+export const EducationImage:FC<Props> = ({ theme, key, className }) => {
   return (
     <svg
-      {...props}
+      key={key}
+      className={className}
       id="eb113788-f1f1-4c1f-be62-f1d0ea2e1eb6"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
