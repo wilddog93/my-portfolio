@@ -89,7 +89,10 @@ export const Navbar = () => {
               <p className="font-bold text-[#126e82]">{siteConfig.name}</p>
             </NextLink>
           </NavbarBrand>
-          <ul className="hidden lg:flex gap-4 justify-start ml-2">
+        </NavbarContent>
+
+        <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="center">
+          <ul className="flex gap-4 justify-center">
             {siteConfig.navItems.map((item) => {
               let active = pathname == item.href || pathname.includes(item.label)
               return (
