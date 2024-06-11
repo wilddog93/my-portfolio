@@ -1,7 +1,7 @@
 "use client"
 
 import { useTheme } from "next-themes";
-import { contactPageData, degrees, experience, projects, projectsHeader, socialMediaLinks } from "@/config/portfolio";
+import { contactPageData, degrees, experience, greeting, projects, projectsHeader, socialMediaLinks } from "@/config/portfolio";
 import { useMemo } from "react";
 import { darkTheme, lightTheme } from "@/config/theme";
 import { ProjectImage } from "@/components/containers/project/project-image";
@@ -35,10 +35,6 @@ export default function ContactPage() {
           <h1 className="text-4xl sm:text-6xl font-semibold" style={{ color: theme.text }}>
             {contactPageData.contactSection.title}
           </h1>
-
-          {/* <h1 className="text-xl sm:text-2xl font-semibold" style={{ color: theme.text }}>
-            {contactPageData.blogSection.subtitle}
-          </h1> */}
           <p
             className=""
             style={{ color: theme.secondaryText }}
@@ -46,6 +42,20 @@ export default function ContactPage() {
             {contactPageData.contactSection.description}
           </p>
           <SocialMedia items={socialMediaLinks} className='w-full sm:justify-start' />
+
+          <Link
+            isExternal
+            target="_blank"
+            className={button({
+              variant: "solid",
+              color: "default",
+              radius: "sm",
+              className: "w-full max-w-fit mx-auto sm:mx-0"
+            })}
+            href={greeting.resumeLink}
+          >
+            See My Resume
+          </Link>
         </div>
       </div>
 
