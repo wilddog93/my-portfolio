@@ -4,6 +4,7 @@ import { Card, CardBody, CardHeader, Image, Link, button } from '@nextui-org/rea
 import clsx from 'clsx';
 import React, { FC, Key } from 'react'
 import { EducationCard } from './education-card';
+import { Fade } from 'react-awesome-reveal';
 
 type Props = {
   theme: ThemeProps;
@@ -14,9 +15,11 @@ type Props = {
 export const Educations: FC<Props> = ({ theme, ...props }) => {
   return (
     <div {...props} className="w-full flex flex-col gap-10" id="educations">
-      <h1 className="text-2xl sm:text-4xl font-semibold text-center" style={{ color: theme.text }}>
-        Educations
-      </h1>
+      <Fade duration={1000} direction='up' triggerOnce>
+        <h1 className="text-2xl sm:text-4xl font-semibold text-center" style={{ color: theme.text }}>
+          Educations
+        </h1>
+      </Fade>
       <div className="flex flex-col gap-10">
         {degrees.degrees.map((degree, id) => {
           return (

@@ -14,6 +14,7 @@ import { ExperienceCard } from "@/components/containers/experience/experience-ca
 import clsx from "clsx";
 import { SocialMedia } from "@/components/common/social-media";
 import { BLogImage } from "@/components/containers/contact/blog-image";
+import { Fade } from "react-awesome-reveal";
 
 export default function ContactPage() {
   const { resolvedTheme } = useTheme();
@@ -28,66 +29,74 @@ export default function ContactPage() {
   return (
     <section className="flex flex-col gap-8">
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-10 items-center tracking-wider">
-        <div className="w-full flex items-center justify-center">
-          <Image className="w-full h-[400px]" src={`./image/${contactPageData["contactSection"].profile_image_path}`} />
-        </div>
-        <div className="w-full flex flex-col gap-6 text-center sm:text-left">
-          <h1 className="text-4xl sm:text-6xl font-semibold" style={{ color: theme.text }}>
-            {contactPageData.contactSection.title}
-          </h1>
-          <p
-            className=""
-            style={{ color: theme.secondaryText }}
-          >
-            {contactPageData.contactSection.description}
-          </p>
-          <SocialMedia items={socialMediaLinks} className='w-full sm:justify-start' />
+        <Fade duration={1000} direction="left" triggerOnce>
+          <div className="w-full flex items-center justify-center">
+            <Image className="w-full h-[600px]" src={`./image/${contactPageData["contactSection"].profile_image_path}`} />
+          </div>
+        </Fade>
+        <Fade duration={1000} direction="right" triggerOnce>
+          <div className="w-full flex flex-col gap-6 text-center sm:text-left">
+            <h1 className="text-4xl sm:text-6xl font-semibold" style={{ color: theme.text }}>
+              {contactPageData.contactSection.title}
+            </h1>
+            <p
+              className=""
+              style={{ color: theme.secondaryText }}
+            >
+              {contactPageData.contactSection.description}
+            </p>
+            <SocialMedia items={socialMediaLinks} className='w-full sm:justify-start' />
 
-          <Link
-            isExternal
-            target="_blank"
-            className={button({
-              variant: "solid",
-              color: "default",
-              radius: "sm",
-              className: "w-full max-w-fit mx-auto sm:mx-0"
-            })}
-            href={greeting.resumeLink}
-          >
-            See My Resume
-          </Link>
-        </div>
+            <Link
+              isExternal
+              target="_blank"
+              className={button({
+                variant: "solid",
+                color: "default",
+                radius: "sm",
+                className: "w-full max-w-fit mx-auto sm:mx-0"
+              })}
+              href={greeting.resumeLink}
+            >
+              See My Resume
+            </Link>
+          </div>
+        </Fade>
       </div>
 
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-10 items-center tracking-wider">
-        <div className="w-full flex flex-col gap-6 text-center sm:text-left">
-          <h1 className="text-4xl sm:text-6xl font-semibold" style={{ color: theme.text }}>
-            {contactPageData.blogSection.title}
-          </h1>
-          <p
-            className=""
-            style={{ color: theme.secondaryText }}
-          >
-            {contactPageData.blogSection.subtitle}
-          </p>
-          <Link
-            isExternal
-            target="_blank"
-            className={button({
-              variant: "solid",
-              color: "default",
-              radius: "sm",
-              className: "w-full max-w-fit mx-auto sm:mx-0"
-            })}
-            href={contactPageData["blogSection"].link}
-          >
-            My LinkedIn Profile
-          </Link>
-        </div>
+        <Fade duration={1000} direction="left" triggerOnce>
+          <div className="w-full flex flex-col gap-6 text-center sm:text-left">
+            <h1 className="text-4xl sm:text-6xl font-semibold" style={{ color: theme.text }}>
+              {contactPageData.blogSection.title}
+            </h1>
+            <p
+              className=""
+              style={{ color: theme.secondaryText }}
+            >
+              {contactPageData.blogSection.subtitle}
+            </p>
+            <Link
+              isExternal
+              target="_blank"
+              className={button({
+                variant: "solid",
+                color: "default",
+                radius: "sm",
+                className: "w-full max-w-fit mx-auto sm:mx-0"
+              })}
+              href={contactPageData["blogSection"].link}
+            >
+              My LinkedIn Profile
+            </Link>
+          </div>
+        </Fade>
 
-        <div className="w-full flex items-center justify-center">
-          <BLogImage theme={theme} />
-        </div>
+        <Fade duration={1000} direction="right" triggerOnce>
+          <div className="w-full flex items-center justify-center">
+            <BLogImage theme={theme} />
+          </div>
+        </Fade>
       </div>
     </section>
   );
