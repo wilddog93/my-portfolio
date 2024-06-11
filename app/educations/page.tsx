@@ -8,7 +8,7 @@ import { EducationImage } from "@/components/containers/education/education-imag
 import { Educations } from "@/components/containers/education";
 import { Certifications } from "@/components/containers/certification";
 
-export default function ducationPage() {
+export default function EducationPage() {
   const { resolvedTheme } = useTheme();
 
   const theme = useMemo(() => {

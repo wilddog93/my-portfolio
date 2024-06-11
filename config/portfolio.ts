@@ -222,67 +222,65 @@ const experience = {
   description:
     "I've completed one internship in AIA Insurance Singapore. I've mostly done projects on my own and I am actively looking for opportunities. I love organizing workshops to share my knowledge with others.",
   header_image_path: "experience.svg",
-  sections: [
-    {
-      title: "Work Experience",
-      experiences: [
-        {
-          title: "Front End Web Developer",
-          company: "PT Orijin Supremasi Ventura",
-          company_url: "https://orijinsupremasi.id/",
-          logo_path: "logo-origin.svg",
-          duration: "September 2023 - Present",
-          location: "Office",
-          description:
-            "I work as a Front End Web Developer who focuses more on the client browser which is build with NextJS - React and NuxtJS - Vue",
-          color: "#0071C5",
-        },
-        {
-          title: "Front End Web Developer",
-          company: "PT Infini Oase Technology",
-          company_url: "https://infinitec.id/",
-          logo_path: "infinitec.jpg",
-          duration: "November 2021 - August 2023",
-          location: "Office",
-          description:
-            "I work as a Front End Web Developer who focuses more on the client browser which is build with NextJS - React",
-          color: "#0071C5",
-        },
-        {
-          title: "Junior Web Developer - (FullStack)",
-          company: "TokoKita Indo Bintan",
-          company_url: "https://www.tokokita.co.id/",
-          logo_path: "logo.png",
-          duration: "Mei 2021 - October 2021",
-          location: "Office",
-          description: "I worked as a fullstack developer",
-          color: "#0071C5",
-        },
-        {
-          title: "Part of Enhancment Security Systems (Intern)",
-          company: "AIA Insurance Singapore",
-          company_url: "https://www.aia.com.sg/",
-          logo_path: "aia.png",
-          duration: "Jan 2020 - Feb 2021",
-          location: "Office",
-          description:
-            "I worked on the Security system department and has responsible to set up Cross-Scripting HTML to company website",
-          color: "#0071C5",
-        },
-        {
-          title: "Junior web programmer (Work)",
-          company: "PT Global Rental Indonesia",
-          company_url: "",
-          logo_path: "no-image.png",
-          duration: "Nov 2019 - Augt 2020",
-          location: "Office",
-          description:
-            "Created Front end of Transportation website. also degined simple web application for better user experience, designed DB Schemas as well.",
-          color: "#ee3c26",
-        },
-      ],
-    },
-  ],
+  sections: {
+    title: "Work Experience",
+    experiences: [
+      {
+        title: "Front End Web Developer",
+        company: "PT Orijin Supremasi Ventura",
+        company_url: "https://orijinsupremasi.id/",
+        logo_path: "orijin.svg",
+        duration: "September 2023 - Present",
+        location: "Office - WFO",
+        description:
+          "I work as a Front End Web Developer who focuses more on the client browser which is build with NextJS - React and NuxtJS - Vue",
+        color: "#0071C5",
+      },
+      {
+        title: "Front End Web Developer",
+        company: "PT Infini Oase Technology",
+        company_url: "https://infinitec.id/",
+        logo_path: "infinitec.jpg",
+        duration: "November 2021 - August 2023",
+        location: "Office - WFO",
+        description:
+          "I work as a Front End Web Developer who focuses more on the client browser which is build with NextJS - React",
+        color: "#0071C5",
+      },
+      {
+        title: "Junior Web Developer - (FullStack)",
+        company: "TokoKita Indo Bintan",
+        company_url: "https://www.tokokita.co.id/",
+        logo_path: "toko-kita.png",
+        duration: "Mei 2021 - October 2021",
+        location: "Office - WFO",
+        description: "I worked as a fullstack developer",
+        color: "#0071C5",
+      },
+      {
+        title: "Part of Enhancment Security Systems - (Internship)",
+        company: "AIA Insurance Singapore",
+        company_url: "https://www.aia.com.sg/",
+        logo_path: "aia.png",
+        duration: "Jan 2020 - Feb 2021",
+        location: "Office - WFO",
+        description:
+          "I worked on the Security system department and has responsible to set up Cross-Scripting HTML to company website",
+        color: "#0071C5",
+      },
+      {
+        title: "Junior web programmer",
+        company: "PT Global Rental Indonesia",
+        company_url: "",
+        logo_path: "no-image.png",
+        duration: "Nov 2019 - Augt 2020",
+        location: "Office - WFO",
+        description:
+          "Created Front end of Transportation website. also degined simple web application for better user experience, designed DB Schemas as well.",
+        color: "#ee3c26",
+      },
+    ],
+  },
 };
 
 // Projects Page

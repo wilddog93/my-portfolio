@@ -10,7 +10,7 @@ import { Image, button } from "@nextui-org/react";
 import SoftwareSkill from "@/components/common/software-skills";
 import { FaGithub } from "react-icons/fa";
 
-export default function ducationPage() {
+export default function ProjectPage() {
   const { resolvedTheme } = useTheme();
 
   const theme = useMemo(() => {
