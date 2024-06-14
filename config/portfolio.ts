@@ -530,7 +530,7 @@ const projects = {
       id: "5",
       name: "Cermin - Face Recognation",
       url: "https://github.com/wilddog93/face-recognation/",
-      website: "https://face-recognation-theta.vercel.app/",
+      website: "https://cermin.tap-agri.com/",
       description:
         "Face Recognation Website. PT Triputra Argo Persada",
       languages: [
