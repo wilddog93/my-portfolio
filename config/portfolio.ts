@@ -1,6 +1,6 @@
 /* Change this file to get your personal Porfolio */
 import { FaBootstrap, FaCss3, FaFacebook, FaGithub, FaGitlab, FaGoogle, FaHtml5, FaLaravel, FaLinkedin, FaNodeJs, FaPhp, FaReact } from "react-icons/fa"
-import { SiFirebase, SiGit, SiJavascript, SiJquery, SiLeaflet, SiNextdotjs, SiNodedotjs, SiNpm, SiPostman, SiReact, SiRedux, SiSocketdotio, SiTailwindcss, SiTypescript, SiVuedotjs, SiYarn } from "react-icons/si"
+import { SiFirebase, SiGit, SiJavascript, SiJquery, SiLeaflet, SiNextdotjs, SiNodedotjs, SiNpm, SiPostman, SiReact, SiRedux, SiSocketdotio, SiTailwindcss, SiTensorflow, SiTypescript, SiVuedotjs, SiYarn } from "react-icons/si"
 
 // Website related settings
 const settings = {
@@ -528,6 +528,54 @@ const projects = {
     },
     {
       id: "5",
+      name: "Cermin - Face Recognation",
+      url: "https://github.com/wilddog93/face-recognation/",
+      website: "https://face-recognation-theta.vercel.app/",
+      description:
+        "Face Recognation Website. PT Triputra Argo Persada",
+      languages: [
+        {
+          skillName: "Javascript",
+          icon: SiJavascript,
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#F7DF1E",
+          },
+          className: "text-yellow-500"
+        },
+        {
+          skillName: "ReactJS",
+          icon: FaReact,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
+        },
+        {
+          skillName: "NextJS",
+          icon: SiNextdotjs,
+          className: "bg-background"
+        },
+        {
+          skillName: "TailwidCSS",
+          icon: SiTailwindcss,
+          style: {
+            color: "#61DAFB",
+          },
+          className: "text-blue-500"
+        },
+        {
+          skillName: "face-api.js",
+          icon: SiTensorflow,
+          style: {
+            color: "#F7DF1E",
+          },
+          className: "text-blue-500"
+        }
+      ],
+    },
+    {
+      id: "6",
       name: "Pokemon API Website",
       url: "https://github.com/wilddog93/pokemon-app-techassesment",
       website: "https://pokemon-app-techassesment.vercel.app/",
