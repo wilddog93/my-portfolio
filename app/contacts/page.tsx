@@ -31,7 +31,7 @@ export default function ContactPage() {
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-10 items-center tracking-wider">
         <Fade duration={1000} direction="left" triggerOnce>
           <div className="w-full flex items-center justify-center">
-            <Image className="w-full h-[600px]" src={`./image/${contactPageData["contactSection"].profile_image_path}`} />
+            <Image className="w-full h-[600px] object-contain object-center" src={`./image/${contactPageData["contactSection"].profile_image_path}`} />
           </div>
         </Fade>
         <Fade duration={1000} direction="right" triggerOnce>

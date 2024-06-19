@@ -31,7 +31,7 @@ export const Certifications: FC<Props> = ({ theme, ...props }) => {
               >
                 <Image
                   src={certification.logo_path}
-                  className='w-full h-[250px] border shadow-sm hover:shadow-medium transition-all duration-300 scale-95 hover:scale-100'
+                  className='w-full h-[250px] border shadow-sm hover:shadow-medium transition-all duration-300 scale-95 hover:scale-100 object-contain object-center'
                   radius='lg'
                 />
               </Link>
