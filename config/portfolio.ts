@@ -1,6 +1,37 @@
 /* Change this file to get your personal Porfolio */
-import { FaBootstrap, FaCss3, FaFacebook, FaGithub, FaGitlab, FaGoogle, FaHtml5, FaLaravel, FaLinkedin, FaNodeJs, FaPhp, FaReact } from "react-icons/fa"
-import { SiFirebase, SiGit, SiJavascript, SiJquery, SiLeaflet, SiNextdotjs, SiNodedotjs, SiNpm, SiPostman, SiReact, SiRedux, SiSocketdotio, SiTailwindcss, SiTensorflow, SiTypescript, SiVuedotjs, SiYarn } from "react-icons/si"
+import {
+  FaBootstrap,
+  FaCss3,
+  FaFacebook,
+  FaGithub,
+  FaGitlab,
+  FaGoogle,
+  FaHtml5,
+  FaLaravel,
+  FaLinkedin,
+  FaNodeJs,
+  FaPhp,
+  FaReact,
+} from "react-icons/fa";
+import {
+  SiFirebase,
+  SiGit,
+  SiJavascript,
+  SiJquery,
+  SiLeaflet,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiNpm,
+  SiPostman,
+  SiReact,
+  SiRedux,
+  SiSocketdotio,
+  SiTailwindcss,
+  SiTensorflow,
+  SiTypescript,
+  SiVuedotjs,
+  SiYarn,
+} from "react-icons/si";
 
 // Website related settings
 const settings = {
@@ -27,31 +58,31 @@ const socialMediaLinks = [
   {
     link: "https://github.com/wilddog93",
     icon: FaGithub,
-    className: "text-foreground"
+    className: "text-foreground",
   },
   {
     link: "https://www.linkedin.com/in/jumakri-ridho-fauzi/",
-    icon: FaLinkedin
+    icon: FaLinkedin,
   },
   {
     link: "mailto:ridhoajibx@gmail.com",
     icon: FaGoogle,
     style: {
-      color: "#FF0000"
-    }
+      color: "#FF0000",
+    },
   },
   {
     link: "https://gitlab.com/ridhoajibx",
     icon: FaGitlab,
     style: {
-      color: "#FFA62F"
-    }
+      color: "#FFA62F",
+    },
   },
   {
     link: "https://www.facebook.com/ridhoajibx/",
-    icon: FaFacebook
-  }
-]
+    icon: FaFacebook,
+  },
+];
 
 const skills = {
   data: [
@@ -157,7 +188,7 @@ const skills = {
           },
         },
       ],
-    }
+    },
   ],
 };
 
@@ -181,7 +212,7 @@ const degrees = {
       subtitle: "Diploma in Information Technology",
       logo_path: "/image/logo/ibsi.png",
       alt_name: "ibsi",
-      duration: "2016 - 2020 (Postpone)",
+      duration: "2016 - 2021",
       descriptions: [
         "🚀 I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
         "🚀 I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
@@ -211,7 +242,7 @@ const certifications = {
         "https://drive.google.com/file/d/1Rd2DFOUllL6Smb8agTlh9Yr3g-yk_Fl_/view?usp=sharing",
       alt_name: "udemy",
       color_code: "#fffbf3",
-    }
+    },
   ],
 };
 
@@ -325,7 +356,7 @@ const projects = {
             backgroundColor: "#FFFFFF",
             color: "#F7DF1E",
           },
-          className: "text-yellow-500"
+          className: "text-yellow-500",
         },
         {
           skillName: "ReactJS",
@@ -333,12 +364,12 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
         {
           skillName: "NextJS",
           icon: SiNextdotjs,
-          className: "bg-background"
+          className: "bg-background",
         },
         {
           skillName: "TailwidCSS",
@@ -346,7 +377,7 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
         {
           skillName: "Firebase",
@@ -354,7 +385,7 @@ const projects = {
           style: {
             color: "#F7DF1E",
           },
-          className: "text-yellow-600"
+          className: "text-yellow-600",
         },
       ],
     },
@@ -363,8 +394,7 @@ const projects = {
       name: "MRCOOL E-Commerce",
       url: "https://github.com/wilddog93/mrcool-dev",
       website: "https://dev.mrcool.work/",
-      description:
-        "This is E-Commerce Website based on US and Canada",
+      description: "This is E-Commerce Website based on US and Canada",
       languages: [
         {
           skillName: "Typescript",
@@ -373,7 +403,7 @@ const projects = {
             backgroundColor: "#FFFFFF",
             color: "#3178C6",
           },
-          className: "text-yellow-500"
+          className: "text-yellow-500",
         },
         {
           skillName: "ReactJS",
@@ -381,12 +411,12 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
         {
           skillName: "NextJS",
           icon: SiNextdotjs,
-          className: "bg-background"
+          className: "bg-background",
         },
         {
           skillName: "TailwidCSS",
@@ -394,7 +424,7 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
       ],
     },
@@ -413,7 +443,7 @@ const projects = {
             backgroundColor: "#FFFFFF",
             color: "#3178C6",
           },
-          className: "text-yellow-500"
+          className: "text-yellow-500",
         },
         {
           skillName: "ReactJS",
@@ -421,7 +451,7 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
         {
           skillName: "Geolocation Map - Leaflet",
@@ -429,7 +459,7 @@ const projects = {
           style: {
             color: "#42B883",
           },
-          className: "text-green-600"
+          className: "text-green-600",
         },
         {
           skillName: "TailwidCSS",
@@ -437,7 +467,7 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
       ],
     },
@@ -456,7 +486,7 @@ const projects = {
             backgroundColor: "#FFFFFF",
             color: "#3178C6",
           },
-          className: "text-yellow-500"
+          className: "text-yellow-500",
         },
         {
           skillName: "ReactJS",
@@ -464,12 +494,12 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
         {
           skillName: "NextJS",
           icon: SiNextdotjs,
-          className: "bg-background"
+          className: "bg-background",
         },
         {
           skillName: "TailwidCSS",
@@ -477,7 +507,7 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
       ],
     },
@@ -496,7 +526,7 @@ const projects = {
             backgroundColor: "#FFFFFF",
             color: "#3178C6",
           },
-          className: "text-yellow-500"
+          className: "text-yellow-500",
         },
         {
           skillName: "ReactJs",
@@ -504,12 +534,12 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
         {
           skillName: "NextJS",
           icon: SiNextdotjs,
-          className: "bg-background"
+          className: "bg-background",
         },
         {
           skillName: "TailwidCSS",
@@ -517,12 +547,12 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
         {
           skillName: "Socket.io",
           icon: SiSocketdotio,
-          className: "text-foreground"
+          className: "text-foreground",
         },
       ],
     },
@@ -531,8 +561,7 @@ const projects = {
       name: "Cermin - Face Recognation",
       url: "https://github.com/wilddog93/face-recognation/",
       website: "https://cermin.tap-agri.com/",
-      description:
-        "Face Recognation Website. PT Triputra Argo Persada",
+      description: "Face Recognation Website. PT Triputra Argo Persada",
       languages: [
         {
           skillName: "Javascript",
@@ -541,7 +570,7 @@ const projects = {
             backgroundColor: "#FFFFFF",
             color: "#F7DF1E",
           },
-          className: "text-yellow-500"
+          className: "text-yellow-500",
         },
         {
           skillName: "ReactJS",
@@ -549,12 +578,12 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
         {
           skillName: "NextJS",
           icon: SiNextdotjs,
-          className: "bg-background"
+          className: "bg-background",
         },
         {
           skillName: "TailwidCSS",
@@ -562,7 +591,7 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
         {
           skillName: "face-api.js",
@@ -570,8 +599,8 @@ const projects = {
           style: {
             color: "#F7DF1E",
           },
-          className: "text-blue-500"
-        }
+          className: "text-blue-500",
+        },
       ],
     },
     {
@@ -579,8 +608,7 @@ const projects = {
       name: "Pokemon API Website",
       url: "https://github.com/wilddog93/pokemon-app-techassesment",
       website: "https://pokemon-app-techassesment.vercel.app/",
-      description:
-        "This is a pokemon website",
+      description: "This is a pokemon website",
       languages: [
         {
           skillName: "Typescript",
@@ -589,7 +617,7 @@ const projects = {
             backgroundColor: "#FFFFFF",
             color: "#3178C6",
           },
-          className: "text-yellow-500"
+          className: "text-yellow-500",
         },
         {
           skillName: "ReactJS",
@@ -597,12 +625,12 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
+          className: "text-blue-500",
         },
         {
           skillName: "NextJS",
           icon: SiNextdotjs,
-          className: "bg-background"
+          className: "bg-background",
         },
         {
           skillName: "TailwidCSS",
@@ -610,8 +638,8 @@ const projects = {
           style: {
             color: "#61DAFB",
           },
-          className: "text-blue-500"
-        }
+          className: "text-blue-500",
+        },
       ],
     },
   ],
